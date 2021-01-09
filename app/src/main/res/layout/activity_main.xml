@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <EditText
+            android:id="@+id/editTextPlaceName"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:inputType="textCapCharacters"
+            />
+
+
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:background="#64B5F6"
+            android:gravity="center"
+            android:text="Send request"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#64B5F6"
+            app:elevation="0dp"
+            app:iconTint="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+
+
+
+<!--        app:rippleColor="@color/colorPrimary"-->
+<!--        app:strokeWidth="1dp"-->
+<!--        app:strokeColor="@color/someColor"-->
+
+    <TextView
+        android:id="@+id/jsonResult"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="6sp"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/parseToValue"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingStart="5dp"-->
+<!--        android:paddingEnd="5dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:background="#64B5F6"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Parse"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:backgroundTint="#64B5F6"-->
+<!--        app:elevation="0dp"-->
+<!--        app:iconTint="#FFFFFF"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/showValue"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingStart="5dp"-->
+<!--        android:paddingEnd="5dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:background="#64B5F6"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Show"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:backgroundTint="#64B5F6"-->
+<!--        app:elevation="0dp"-->
+<!--        app:iconTint="#FFFFFF"-->
+<!--        />-->
+
+    <!--        app:rippleColor="@color/colorPrimary"-->
+    <!--        app:strokeWidth="1dp"-->
+    <!--        app:strokeColor="@color/someColor"-->
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
